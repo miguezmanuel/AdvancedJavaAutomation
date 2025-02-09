@@ -28,7 +28,7 @@ public class EmailVerifier {
             Message[] messages = inbox.search(new FlagTerm(new Flags(Flags.Flag.SEEN), false));
 
 
-            System.out.println("📧 Unread emails: " + messages.length);
+            System.out.println("Unread emails: " + messages.length);
 
             for (Message message : messages) {
                 String subject = message.getSubject();
